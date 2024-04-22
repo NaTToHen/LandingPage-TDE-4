@@ -168,3 +168,33 @@ nav a {
 .card h1 {
   font-size: 1.2rem;
 }
+
+.textosSec4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  color: black;
+}
+
+.textosSec4 div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.textosSec4 div h1 {
+  font-size: 1.8rem;
+}
+
+.textosSec4 div hr {
+  background-color: #1c5fa8;
+  width: 60px;
+  height: 5px;
+}
+
+.textosSec4 p {
+  width: 50%;
+  font-size: 1.1rem;
+}
