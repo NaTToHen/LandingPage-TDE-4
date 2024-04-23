@@ -174,7 +174,7 @@ nav a {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  color: black;
+  color: white;
 }
 
 .textosSec4 div {
@@ -186,10 +186,11 @@ nav a {
 
 .textosSec4 div h1 {
   font-size: 1.8rem;
+  margin-top: 40px;
 }
 
 .textosSec4 div hr {
-  background-color: #1c5fa8;
+  background-color: #ffd700;
   width: 60px;
   height: 5px;
 }
@@ -197,4 +198,91 @@ nav a {
 .textosSec4 p {
   width: 50%;
   font-size: 1.1rem;
+
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c5fa8;
+  gap: 40px;
+  padding: 0 10%;
+  
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.form h2{
+  text-align: start;
+  width: 100%;
+  color: #ffd700;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.formInput{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.formButton{
+  padding: 8px 18px 10px;
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #ffd700;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contatoFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contatoFooter h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.redes-sociais a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.redes-sociais a:hover {
+  background-color: #000;
+  color: #fff;
 }
