@@ -262,9 +262,9 @@ nav a:hover {
 .formButton {
   padding: 10px 15px;
   cursor: pointer;
-  background-color: #7200f5;
+  background-color: #ffd700;
   border: none;
-  color: #ffffff;
+  color: black;
   border-radius: 5px;
   margin-right: auto;
 }
