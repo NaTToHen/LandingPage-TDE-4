@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,17 @@ body {
   padding: 0 20px;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: ease-in 0.3s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: ease-in 0.3s;
+}
 /* 
 Cores defaults do site para utilização
 
@@ -54,6 +66,11 @@ nav a {
   color: #1c5fa8;
   text-decoration: none;
   font-weight: 500;
+  transition: ease-in 0.2s;
+}
+
+nav a:hover {
+  color: #ffd700;
 }
 
 .sec1 {
@@ -62,7 +79,7 @@ nav a {
   justify-content: space-between;
   padding: 0 10%;
   background-color: #1c5fa8;
-  height: 200px;
+  min-height: 200px;
   color: white;
 }
 
@@ -71,7 +88,7 @@ nav a {
   gap: 30px;
 }
 
-.botoes button {
+.botoes a {
   background: none;
   border: 1px solid white;
   cursor: pointer;
@@ -86,7 +103,7 @@ nav a {
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
-  height: 600px;
+  min-height: 600px;
 }
 
 .textosSec2 {
@@ -114,8 +131,9 @@ nav a {
   justify-content: center;
   gap: 35px;
   padding: 0 10%;
-  height: 550px;
+  min-height: 550px;
   text-align: center;
+  scroll-snap-align: start;
 }
 
 .textosSec3 {
@@ -163,6 +181,11 @@ nav a {
 
 .card img {
   border-radius: 20px;
+}
+
+.card img:hover {
+  outline: 4px solid #1c5fa8;
+  transform: scale(1.06);
 }
 
 .card h1 {
@@ -236,22 +259,24 @@ nav a {
   margin-bottom: 15px;
 }
 
-.formButton{
-  padding: 8px 18px 10px;
-  background-color: #ffd700;
-  color: #000;
+.formButton {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #7200f5;
+  border: none;
+  color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #ffd700;
   margin-right: auto;
 }
 
 footer {
-  background-color: #333;
+  background-color: #1c5fa8;
   color: #fff;
-  padding: 20px;
+  padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 4px solid #fff;
 }
 
 .contatoFooter {
@@ -265,24 +290,23 @@ footer {
   margin-bottom: 5px;
 }
 
-.redes-sociais {
+.redesSociais {
   display: flex;
   flex-direction: column;
   display: flex;
+  align-items: end;
   gap: 10px;
 }
 
-.redes-sociais a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  color: #000;
-  transition: background-color 0.3s;
+.redes-sociais-link {
+  display: flex;
+  gap: 12px;
 }
 
-.redes-sociais a:hover {
-  background-color: #000;
-  color: #fff;
+.redes-sociais-link a {
+  text-align: center;
+  color: #FFF;
 }
+
+
+
